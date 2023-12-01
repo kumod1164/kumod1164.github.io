@@ -100,3 +100,36 @@ function downloadResume() {
   link.click();
   document.body.removeChild(link);
 }
+
+document.getElementById("githubButton").addEventListener("click", function() {
+  var githubURL = "https://github.com/1ashutoshverma/Green-Paradise";
+  window.open(githubURL, "_blank");
+});
+
+document.getElementById("liveButton").addEventListener("click", function() {
+  var liveURL = "https://green-paradise-team.netlify.app/index.html";
+  window.open(liveURL, "_blank");
+});
+
+
+
+document.getElementById("alcazarGithubButton").addEventListener("click", function() {
+  var githubURL = "https://github.com/Shubham10320/Travel-website";
+  window.open(githubURL, "_blank");
+});
+
+document.getElementById("alcazarLiveButton").addEventListener("click", function() {
+  var liveURL = "https://alcazartravelling.netlify.app/html/index.html";
+  window.open(liveURL, "_blank");
+});
+
+
+document.getElementById("oestinGithubButton").addEventListener("click", function() {
+  var githubURL = "https://github.com/kumod1164/Oestin_CW";
+  window.open(githubURL, "_blank");
+});
+
+document.getElementById("oestinLiveButton").addEventListener("click", function() {
+  var liveURL = "https://64dcecef4c77132933378ad2--silver-piroshki-29b668.netlify.app/index.html";
+  window.open(liveURL, "_blank");
+});
