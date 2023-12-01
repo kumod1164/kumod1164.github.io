@@ -87,3 +87,16 @@ for (var i = 0; i < navLinks.length; i++) {
   });
 }
 
+function downloadResume() {
+
+  var driveLink = "https://drive.google.com/file/d/1UTfCUehsleS3UGjEuJv-YKvYxjeohLYq/view?usp=sharing";
+  window.open(driveLink, '_blank');
+
+  // Start downloading the resume
+  var link = document.createElement('a');
+  link.href = driveLink.replace("view", "export?format=pdf"); 
+  link.download = 'Kumod-Sharma-Resume.pdf';
+  document.body.appendChild(link);
+  link.click();
+  document.body.removeChild(link);
+}

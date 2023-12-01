@@ -89,14 +89,30 @@ nav.sticky .menu a{
 nav.sticky .menu a:hover{
   color:var(--black-color);
 }
-.navbar .media-icons a{
+.navbar .button button{
+  outline: none;
+  padding: 8px 16px;
+  border-radius: 6px;
+  font-size: 25px;
+  font-weight: 400;
+  background: var(--primary-color);
+  color: var(--white-color);
+  cursor: pointer;
+  border: 2px solid transparent;
+  transition: all 0.4s ease;
+}
+.navbar .button a{
+  color: #f0f8ff;
+}
+
+/* .navbar .media-icons a{
   color:var(--primary-color);
   font-size: 18px;
   margin:0 6px;
 }
 nav.sticky .media-icons a{
   color:var(--white-color);
-}
+} */
 
 /* side navigation Menu Button CSS */
 nav .menu-btn,
@@ -454,6 +470,9 @@ footer .text span a:hover{
      align-items:center;
      transition: all 0.5s ease;
    }
+   .navbar .button button{
+    display: none;
+   }
    .navbar.active .menu{
      left:0;
    }
@@ -519,5 +538,39 @@ footer .text span a:hover{
     color:var(--primary-color);
   }
 }
-        
-      
+
+
+#box{
+  display: grid;
+  grid-template-columns: repeat(4,1fr);   
+  gap: 20px;
+  width: 90%;
+  margin: auto;
+}
+
+.card {
+  padding: 5%;  
+  transition: transform 0.3s ease; /* Add a smooth transition effect */
+}
+
+.card:hover {
+  transform: scale(1.1); /* Zoom in on hover */
+}
+
+.card img{
+  height: 50%;
+  width: 40%;
+}
+
+@media (max-width: 768px) {
+  #box {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* For mobiles */
+@media (max-width: 480px) {
+  #box {
+    grid-template-columns: 1fr;
+  }
+}
