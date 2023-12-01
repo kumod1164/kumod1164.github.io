@@ -144,6 +144,6 @@ document.getElementById("contactLinkedin").addEventListener("click", function() 
   window.open(linkedinURL, "_blank");
 });
 
-document.getElementById("resume-button").onclick = () => {
+document.getElementById("resume-button-2").onclick = () => {
   window.open("https://drive.google.com/file/d/1UTfCUehsleS3UGjEuJv-YKvYxjeohLYq/view?usp=drive_link");
 }
