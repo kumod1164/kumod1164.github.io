@@ -745,3 +745,9 @@ footer .text span a:hover{
   margin-bottom: 10px;
 }
 
+@media screen and (max-width: 768px) {
+  
+  #resume-button-2{
+    display: none;
+  }
+}
