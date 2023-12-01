@@ -718,7 +718,7 @@ footer .text span a:hover{
   
   .fs_container, .bs_container {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(2, 1fr);
     gap: 2rem;
     margin-bottom: 40px;
 }
@@ -750,4 +750,9 @@ footer .text span a:hover{
   #resume-button-2{
     display: none;
   }
+  .mainCont{
+    display: flex;
+    flex-direction: column;
+  }
+
 }
