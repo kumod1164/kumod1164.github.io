@@ -618,3 +618,17 @@ footer .text span a:hover{
   display: block;
  }
 }
+
+.contactSection button{
+  outline: none;
+  padding: 8px 16px;
+  border-radius: 6px;
+  font-size: 20px;
+  font-weight: 300;
+  background: var(--primary-color);
+  color: var(--white-color);
+  cursor: pointer;
+  border: 2px solid transparent;
+  transition: all 0.4s ease;
+  margin-bottom: 10px;
+}

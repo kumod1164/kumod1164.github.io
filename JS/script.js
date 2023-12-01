@@ -133,3 +133,14 @@ document.getElementById("oestinLiveButton").addEventListener("click", function()
   var liveURL = "https://64dcecef4c77132933378ad2--silver-piroshki-29b668.netlify.app/index.html";
   window.open(liveURL, "_blank");
 });
+
+document.getElementById("contactGithub").addEventListener("click", function() {
+  var gitURL = "https://github.com/kumod1164";
+  window.open(gitURL, "_blank");
+});
+
+document.getElementById("contactLinkedin").addEventListener("click", function() {
+  var linkedinURL = "https://www.linkedin.com/in/kumodks/";
+  window.open(linkedinURL, "_blank");
+});
+
