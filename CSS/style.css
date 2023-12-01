@@ -579,6 +579,12 @@ footer .text span a:hover{
   display: flex;
   margin: auto;
   margin-top: 20px;
+  cursor: pointer;
+}
+
+.mainCont:hover {
+  background: #0986d40c;
+  transform: translate(-2px, -5px);
 }
 
 .projectImg img{
@@ -632,3 +638,110 @@ footer .text span a:hover{
   transition: all 0.4s ease;
   margin-bottom: 10px;
 }
+
+#skills {
+  padding: 100px 0;
+}
+
+#skills>.section_title::after {
+  width: 50%;
+  flex: 0.48
+}
+
+.frontend-skills {
+  width: 100%;
+}
+
+.frontend-skills>h1, .backend-skills>h1 {
+  font-size: var(--large-font);
+  color: var(--grey-dark);
+  margin-bottom: 1.5rem;
+}
+
+.fs_container {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 2rem;
+  margin-bottom: 40px;
+}
+
+.bs_container {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 2rem;
+  margin-bottom: 40px;
+}
+
+.skills-card {
+  padding: 12px;
+  border: 2px solid var(--first-color);
+  border-radius: 15px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  transition: ease-in-out 0.25s;
+}
+
+.skills-card:hover {
+  background: #0986d40c;
+  transform: translate(-2px, -5px);
+}
+
+.skills-card:hover span {
+  color: var(--first-color);
+}
+
+.skills-card>img {
+  width: 50%;
+  height: 50%;
+}
+
+.skills-card>span {
+  height: 20%;
+  margin-top: 15px;
+  color: var(--grey-dark);
+  font-weight: 700;
+  font-size: var(--medium-font);
+}
+
+@media screen and (max-width: 1040px){
+.fs_container, .bs_container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 2rem;
+  margin-bottom: 40px;
+}
+}
+
+@media screen and (max-width: 768px) {
+  
+  .fs_container, .bs_container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+    margin-bottom: 40px;
+}
+}
+
+@media screen and (max-width: 480px) {
+  .fs_container, .bs_container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+    margin-bottom: 40px;
+}
+}
+#resume-button-2 {
+  outline: none;
+  padding: 8px 16px;
+  border-radius: 6px;
+  font-size: 20px;
+  font-weight: 300;
+  
+  cursor: pointer;
+  border: 2px solid transparent;
+  transition: all 0.4s ease;
+  margin-bottom: 10px;
+}
+
