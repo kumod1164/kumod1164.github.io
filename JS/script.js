@@ -101,6 +101,8 @@ function downloadResume() {
   document.body.removeChild(link);
 }
 
+// Live and Github Links
+
 document.getElementById("githubButton").addEventListener("click", function() {
   var githubURL = "https://github.com/1ashutoshverma/Green-Paradise";
   window.open(githubURL, "_blank");
@@ -144,6 +146,6 @@ document.getElementById("contactLinkedin").addEventListener("click", function() 
   window.open(linkedinURL, "_blank");
 });
 
-document.getElementById("resume-button-2").onclick = () => {
+document.getElementById("resume-button").onclick = () => {
   window.open("https://drive.google.com/file/d/1UTfCUehsleS3UGjEuJv-YKvYxjeohLYq/view?usp=drive_link");
 }

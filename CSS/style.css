@@ -333,48 +333,6 @@ section .button button:hover{
   color:var(--primary-color);
 }
 
-/* My Services CSS */
-.services .boxes{
-   display:flex; 
-   flex-wrap: wrap;
-   justify-content:space-between;
-}
-.services .boxes .box{
-  margin:20px 0;
-  width:calc(100% / 3 - 20px);
-  text-align: center;
-  border-radius: 12px;
-  padding:30px 10px;
-  box-shadow: 0 5px 10px rgba(0,0,0,0.12);
-  cursor:default;
-  transition: all 0.4s ease;
-}
-.services .boxes .box:hover{
-  background: var(--primary-color);
-  color:var(--white-color);
-}
-.services .boxes .box .icon{
-  height:50px;
-  width:50px;
-  background: var(--primary-color);
-  border-radius: 50%;
-  text-align: center;
-  line-height: 50px;
-  font-size: 18px;
-  color:var(--white-color);
-  margin:0 auto 10px auto;
-  transition: all 0.4s ease;
-}
-.boxes .box:hover .icon{
-  background:var(--white-color);
-  color:var(--primary-color);
-}
-.services .boxes .box:hover .topic,
-.services .boxes .box:hover p{
-  color:var(--white-color);
-  transition: all 0.4s ease;
-}
-
 /* Contact Me CSS */
 .contact{
   background: #f0f8ff;
@@ -389,25 +347,6 @@ section .button button:hover{
   margin:auto;
 }
 
-/* Footer CSS */
-footer{
-  background:var(--primary-color);
-  padding:15px 0;
-  text-align: center;
-  font-family: 'Poppins', sans-serif;
-}
-footer .text span{
-  font-size: 17px;
-  font-weight: 400;
-  color:var(--white-color);
-}
-footer .text span a{
-  font-weight: 500;
-  color:var(--white-color);
-}
-footer .text span a:hover{
-  text-decoration: underline;
-}
 /* Scroll To Top Button CSS */
 .scroll-button a{
   position:fixed;
@@ -442,7 +381,7 @@ footer .text span a:hover{
     width:90%;
     margin:40px 0;
   }
-  .services .boxes .box{
+  .projects .boxes .box{
     margin:20px 0;
     width:calc(100% / 2 - 20px);
   }
@@ -515,7 +454,7 @@ footer .text span a:hover{
     width:100%;
   }
 
-  .services .boxes .box{
+  .projects .boxes .box{
     margin:20px 0; 
     width:100%;
   }
@@ -732,7 +671,7 @@ footer .text span a:hover{
     margin-bottom: 40px;
 }
 }
-#resume-button-2 {
+#resume-button{
   outline: none;
   padding: 8px 16px;
   border-radius: 6px;
@@ -747,7 +686,7 @@ footer .text span a:hover{
 
 @media screen and (max-width: 768px) {
   
-  #resume-button-2{
+  #resume-button{
     display: none;
   }
   .mainCont{
